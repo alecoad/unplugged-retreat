@@ -106,16 +106,16 @@ header {
   padding: 15px 0;
 }
 
-header img {
-  padding-bottom: 10px;
-}
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header img {
+  padding-bottom: 10px;
 }
 
 .header-divider {
@@ -175,7 +175,6 @@ footer .social-icons p {
 footer .copyright {
   margin: 20px 0;
 }
-
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
@@ -400,10 +399,9 @@ aside p {
   }
 
   /* Header */
-
   header {
     justify-content: center;
-    /* NECESSARY??? */
+    padding: 33px 0;
   }
 
   header .content-wrapper {
@@ -431,7 +429,6 @@ aside p {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    /* NECESSARY? */
   }
 
   aside .content-wrapper .form-description,
@@ -441,38 +438,37 @@ aside p {
   }
 
   /* Features */
-
   .features article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row wrap; /*column wrap?*/
     flex-basis: 50%;
   }
 
   .features .features-item-description {
-    width: 30%;
+    width: 50%;
   }
 
   /* Reviews */
   .reviews article {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .reviews article div {
-    width: 50%;
+    width: 40%;
   }
 
   /* Footer */
   footer .content-wrapper {
-    width: 100%;
+    width: 65%;
     margin: 100px 0;
   }
 
   .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
@@ -481,7 +477,48 @@ aside p {
   }
 
   footer .copyright {
-    width: 40%;
+    width: 100%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
   }
 }
 
