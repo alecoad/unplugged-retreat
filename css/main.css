@@ -442,7 +442,8 @@ aside p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap; /*column wrap?*/
+    flex-flow: row wrap;
+    /*column wrap?*/
     flex-basis: 50%;
   }
 
@@ -524,6 +525,57 @@ aside p {
 
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Hero */
+  .hero-area {
+    height: 600px;
+  }
+
+  .hero-area h1 {
+    width: 70%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 90%;
+  }
+
+    /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
 }
 
 @media print,
