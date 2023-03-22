@@ -103,6 +103,7 @@ body {
 ul,
 ol {
   list-style: none;
+  margin: 0;
 }
 
 a {
@@ -130,11 +131,11 @@ p {
 }
 
 img {
-  /*tbd*/
+  width: 100%;
 }
 
 figure {
-  /*tbd*/
+  margin: 0;
 }
 
 address {
@@ -169,12 +170,20 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 header img {
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
 }
 
 .header-divider {
-  color: #3a3a3a;
+  background: #3a3a3a;
   height: 1px;
   width: 100%;
   margin: 10px 0 20px;
@@ -242,6 +251,9 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -293,6 +305,8 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
