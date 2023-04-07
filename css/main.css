@@ -115,6 +115,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -127,7 +128,7 @@ h4 {
 
 p {
   font-size: 0.875em;
-  line-height: 1.125;
+  line-height: 1.285;
 }
 
 img {
@@ -176,10 +177,6 @@ header figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-header img {
-  /*padding-bottom: 10px;*/
 }
 
 .header-divider {
@@ -238,15 +235,15 @@ footer .social-icons {
 footer .social-icons p {
   background-color: #527158;
   border-radius: 50%;
-  height: 2em;
-  width: 2em;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .social-icons i {
-  height: 1.313em;
+footer .social-icons p i {
+  font-size: 1.313em;
 }
 
 footer .copyright {
